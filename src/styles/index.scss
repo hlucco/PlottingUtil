@@ -1,0 +1,60 @@
+$text_color: #c7c7c7;
+$card-color: #141414;
+
+body {
+  background-color: black;
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.leaflet-container {
+  height: 100vh;
+  margin: 0;
+}
+
+.leaflet-control-attribution {
+  display: none;
+}
+
+.route-list-container {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background-color: $card-color;
+  max-height: 75vh;
+  z-index: 999;
+  color: $text_color;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  min-width: 200px;
+  border-radius: 5px;
+  overflow-y: scroll;
+
+  span {
+    display: flex;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    align-items: center;
+
+    div {
+      margin-right: 0.75rem;
+    }
+  }
+
+  .route-element-indicator {
+    border-radius: 50%;
+    height: 1rem;
+    width: 1rem;
+  }
+}
+
+.select-all-button {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  z-index: 999;
+  background-color: $card-color;
+  color: $text_color;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+}
